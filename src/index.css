@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--appBackground: linear-gradient(
+		90deg,
+		rgba(103, 86, 215, 1) 0%,
+		rgba(69, 48, 178, 1) 35%
+	);
+	--mainBackground: #cfd9e3;
+	--taskListBackfround: #5450d6;
+	--fontColor: #fcfbff;
+	--buttonBackground: #21d1ff;
+	--taskFinished: #645bcd;
+}
+html,
+body,
+#root {
+	background-color: var(--mainBackground);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+}

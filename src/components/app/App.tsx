@@ -31,7 +31,6 @@ export const App = () => {
 		saveInLocalStorage();
 	}, [filteredTasks]);
 	useEffect(() => {
-		
 		const task = localStorage.getItem('task');
 		console.log(task);
 		if (task) {
@@ -46,8 +45,6 @@ export const App = () => {
 		<div className={styles.appContainer}>
 			<Form
 				inputText={setInputValue}
-				filteredTasks={filteredTasks}
-				setFilteredTasks={setFilteredTasks}
 				setTasksArray={setTasksArray}
 				tasksArray={tasksArray}
 				inputValue={inputValue}

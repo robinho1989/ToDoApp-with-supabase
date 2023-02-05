@@ -1,2 +1,6 @@
-
+.appContainer{
+    background: var(--appBackground);
+    border-radius: 20px;
+    padding: 2em;
+}
 

@@ -34,9 +34,9 @@ export const Task = ({
 
 		setTasksArray(completeTasks);
 	};
-	
+
 	return (
-		<li>
+		<li className={styles.taskItem}>
 			<p
 				className={
 					itemToRemove.isComplete
@@ -46,8 +46,20 @@ export const Task = ({
 			>
 				{taskText}
 			</p>
-			<button onClick={() => completeButton(itemToRemove)}>Complete</button>{' '}
-			<button onClick={() => deleteButton(itemToRemove)}>Delete</button>
+			<div className={styles.buttonContainer}>
+				<button
+					className={styles.buttons}
+					onClick={() => completeButton(itemToRemove)}
+				>
+					Complete
+				</button>
+				<button
+					className={styles.buttons}
+					onClick={() => deleteButton(itemToRemove)}
+				>
+					Delete
+				</button>
+			</div>
 		</li>
 	);
 };

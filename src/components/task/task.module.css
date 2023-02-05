@@ -1,6 +1,22 @@
+.buttons {
+	border: none;
+	border-radius: 8px;
+	display: inline-block;
+	padding: 0.5em;
+	background-color: var(--buttonBackground);
+}
 .completeTask {
 	text-decoration: line-through;
 }
-.uncompleteTask{
-    text-decoration: none;
+.taskItem {
+	background-color: var(--taskListBackfround);
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0.5em 0;
+	padding: 1em;
+}
+.uncompleteTask {
+	color: var(--fontColor);
+	text-decoration: none;
 }

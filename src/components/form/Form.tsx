@@ -8,8 +8,7 @@ type FormProps = {
 	inputValue: string;
 	selectStatus: string;
 	setSelectStatus: (active: string) => void;
-	filteredTasks: TasksArray;
-	setFilteredTasks: (active: TasksArray) => void;
+
 };
 type TasksArray = {
 	id: string;
@@ -22,10 +21,7 @@ export const Form = ({
 	setTasksArray,
 	tasksArray,
 	inputValue,
-	selectStatus,
 	setSelectStatus,
-	filteredTasks,
-	setFilteredTasks,
 }: FormProps) => {
 	const inputTextHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
 		inputText(e.target.value);
@@ -40,7 +36,7 @@ export const Form = ({
 	const selectStatusHandler = (e: React.ChangeEvent<HTMLSelectElement>) => {
 		setSelectStatus(e.target.value);
 	};
-	
+
 	return (
 		<form
 			onSubmit={(e) => {
