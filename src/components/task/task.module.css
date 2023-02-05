@@ -1,0 +1,6 @@
+.completeTask {
+	text-decoration: line-through;
+}
+.uncompleteTask{
+    text-decoration: none;
+}
