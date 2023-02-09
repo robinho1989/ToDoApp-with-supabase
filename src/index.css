@@ -5,21 +5,18 @@
 	padding: 0;
 }
 :root {
-	--appBackground: linear-gradient(
-		90deg,
-		rgba(103, 86, 215, 1) 0%,
-		rgba(69, 48, 178, 1) 35%
-	);
-	--mainBackground: #cfd9e3;
-	--taskListBackfround: #5450d6;
-	--fontColor: #fcfbff;
-	--buttonBackground: #21d1ff;
+	--appBackground: #294187;
+	--mainBackground:#3b3d4285;
+	--taskListBackfround: #171f34;
+	--fontColor: #f9fafc;
+	--buttonBackground: #eb06ff;
 	--taskFinished: #645bcd;
+	
 }
 html,
 body,
 #root {
-	background-color: var(--mainBackground);
+	background: var(--mainBackground);
 	display: flex;
 	align-items: center;
 	justify-content: center;

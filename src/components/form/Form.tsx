@@ -1,6 +1,7 @@
 import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import styles from './form.module.css';
+import { Icon } from '@iconify/react';
 type FormProps = {
 	tasksArray: TasksArray;
 	inputText: (active: string) => void;
@@ -8,7 +9,6 @@ type FormProps = {
 	inputValue: string;
 	selectStatus: string;
 	setSelectStatus: (active: string) => void;
-
 };
 type TasksArray = {
 	id: string;
@@ -39,20 +39,27 @@ export const Form = ({
 
 	return (
 		<form
+			className={styles.form}
 			onSubmit={(e) => {
 				e.preventDefault();
 			}}
 		>
-			<input
-				placeholder='Enter your task'
-				value={inputValue}
-				onChange={inputTextHandler}
-				type='text'
-				className={styles.textInput}
-			/>
-			<button onClick={addTask} className={styles.todoButton}>
-				+
-			</button>
+			<div className={styles.inputContainer}>
+				<input
+					placeholder='Enter your task'
+					value={inputValue}
+					onChange={inputTextHandler}
+					type='text'
+					className={styles.textInput}
+				/>
+				<button onClick={addTask} className={styles.todoButton}>
+					<Icon
+						className={styles.todoButtonIcon}
+						icon='material-symbols:add-box-outline'
+					/>
+				</button>
+			</div>
+
 			<select
 				onChange={selectStatusHandler}
 				name='todolist'

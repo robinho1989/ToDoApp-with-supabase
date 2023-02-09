@@ -1,4 +1,5 @@
 import styles from './task.module.css';
+import { Icon } from '@iconify/react';
 type taskObject = {
 	id: string;
 	task: string;
@@ -40,8 +41,8 @@ export const Task = ({
 			<p
 				className={
 					itemToRemove.isComplete
-						? `${styles.completeTask}`
-						: `${styles.uncompleteTask}`
+						? `${styles.completeTask} ${styles.task}`
+						: `${styles.uncompleteTask} ${styles.task}`
 				}
 			>
 				{taskText}
@@ -51,13 +52,13 @@ export const Task = ({
 					className={styles.buttons}
 					onClick={() => completeButton(itemToRemove)}
 				>
-					Complete
+					<Icon className={styles.buttonIcon} icon='fluent-mdl2:completed' />
 				</button>
 				<button
 					className={styles.buttons}
 					onClick={() => deleteButton(itemToRemove)}
 				>
-					Delete
+					<Icon className={styles.buttonIcon} icon='ic:round-delete-outline' />
 				</button>
 			</div>
 		</li>

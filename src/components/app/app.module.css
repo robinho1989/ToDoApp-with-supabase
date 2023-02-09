@@ -1,6 +1,6 @@
-.appContainer{
-    background: var(--appBackground);
-    border-radius: 20px;
-    padding: 2em;
+.appContainer {
+	background: var(--appBackground);
+	border-radius: 20px;
+	min-height: 350px;
+	padding: 2em;
 }
-

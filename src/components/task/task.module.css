@@ -3,20 +3,35 @@
 	border-radius: 8px;
 	display: inline-block;
 	padding: 0.5em;
-	background-color: var(--buttonBackground);
+	background: none;
+	cursor: pointer;
+}
+.buttonsContainer:first-child {
+	margin-right: 1em;
+}
+.buttonIcon {
+	color: var(--buttonBackground);
+	height: 20px;
+	width: 20px;
 }
 .completeTask {
 	text-decoration: line-through;
+	text-decoration-color: var(--buttonBackground);
+	text-decoration-thickness: 2px;
+}
+.task {
+	color: var(--fontColor);
+	font-size: 1.6rem;
 }
 .taskItem {
 	background-color: var(--taskListBackfround);
 	border-radius: 10px;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	margin: 0.5em 0;
 	padding: 1em;
 }
 .uncompleteTask {
-	color: var(--fontColor);
 	text-decoration: none;
 }

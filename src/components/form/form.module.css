@@ -1,0 +1,49 @@
+.form {
+	display: flex;
+	margin-bottom: 1em;
+}
+.inputContainer {
+	display: flex;
+
+	margin-right: 1em;
+}
+.select {
+	background: var(--taskListBackfround);
+	border: none;
+	color: var(--fontColor);
+    font-size: 1.4rem;
+	padding: 0 0.5em;
+}
+.select:focus {
+	outline: none;
+}
+.select::-ms-expand {
+	background: var(--buttonBackground);
+}
+.textInput {
+	background: var(--taskListBackfround);
+	border: transparent;
+	color: var(--fontColor);
+	font-size: 1.4rem;
+	padding: 0.7em;
+}
+.textInput:focus {
+	outline: none;
+}
+
+.todoButton {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	justify-content: center;
+	background-color: var(--buttonBackground);
+	border: none;
+	padding: 0 0.7em;
+}
+.todoButtonIcon {
+	color: var(--fontColor);
+	display: inline-block;
+	height: 20px;
+
+	width: 20px;
+}
