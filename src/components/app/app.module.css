@@ -2,5 +2,14 @@
 	background: var(--appBackground);
 	border-radius: 20px;
 	min-height: 350px;
+	min-width: 250px;
 	padding: 2em;
+}
+.appSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+	padding: 1em;
+    width: 100%;
 }

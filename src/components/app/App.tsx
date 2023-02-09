@@ -42,20 +42,23 @@ export const App = () => {
 		localStorage.setItem('task', JSON.stringify(filteredTasks));
 	};
 	return (
-		<div className={styles.appContainer}>
-			<Form
-				inputText={setInputValue}
-				setTasksArray={setTasksArray}
-				tasksArray={tasksArray}
-				inputValue={inputValue}
-				selectStatus={selectStatus}
-				setSelectStatus={setSelectStatus}
-			/>
-			<Todolist
-				filteredTasks={filteredTasks}
-				setTasksArray={setTasksArray}
-				tasksArray={tasksArray}
-			/>
-		</div>
+		<section className={styles.appSection}>
+			
+			<div className={styles.appContainer}>
+				<Form
+					inputText={setInputValue}
+					setTasksArray={setTasksArray}
+					tasksArray={tasksArray}
+					inputValue={inputValue}
+					selectStatus={selectStatus}
+					setSelectStatus={setSelectStatus}
+				/>
+				<Todolist
+					filteredTasks={filteredTasks}
+					setTasksArray={setTasksArray}
+					tasksArray={tasksArray}
+				/>
+			</div>
+		</section>
 	);
 };
